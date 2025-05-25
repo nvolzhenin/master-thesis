@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  tennis-bot:
+    build: .
+    container_name: tennis-bot
+    environment:
+      - TELEGRAM_TOKEN='my-token'
+    restart: always
+    ports:
+      - "80:80"
